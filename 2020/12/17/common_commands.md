@@ -1,0 +1,26 @@
+# common_commands
+## Imports/Exports
+### things to remember
+* when setting up the account in the app, make sure to check things such as...
+* * coupons
+* * plans
+* * shipping
+* * turn off email for: cancelled subs, new invoice, and new subs
+* * leading 0's on subs postal code will cause failures
+### common commands
+#### impors/exports
+* gcloud auth login --update-adc     # you only need to run this once per day
+* gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a    # to log into the box
+* gcloud compute scp --project=devops-f467c7d5 --zone=us-east4-a ~/local_file.txt import-export:~/    # to import a doc
+* gcloud compute scp --project=devops-f467c7d5 --zone=us-east4-a import-export:~/remote_file.txt ~/    # to import from inside the box
+* [link to mounting stuff](https://wiki.recurly.net/display/DEV/How+to+use+EncFS)
+* new_imports.sh
+* * follow steps prompted to make things set up
+* cp path_to_file path_to_end_location
+* 
+#### TMUX
+* tmux new -s sessionnamme    # do this to start a new tmux session
+* tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
+**find the detach command and put it here**
+* tmux attach -t sessionname    # attach to a session
+
