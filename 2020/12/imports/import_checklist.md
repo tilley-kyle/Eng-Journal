@@ -1,5 +1,5 @@
 # [company/mechant] Import
-### Dates
+# Dates
 #### Useful Links
 * [Recurly Wiki for EncFS (mounting and unmounting)](https://wiki.recurly.net/display/DEV/How+to+use+EncFS)
 * [v2-api-data-imports github readme](https://github.com/recurly/v2-api-data-imports)
