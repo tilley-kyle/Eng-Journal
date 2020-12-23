@@ -18,9 +18,13 @@
 * new_imports.sh
 * * follow steps prompted to make things set up
 * cp path_to_file path_to_end_location
-* 
+* SUBDOMAIN=the_subdomain                                           # unmounting to re-encrypt data
+cd ~/secure
+fusermount -u ~/secure/$SUBDOMAIN/
+* cd ~/secure                                                       # remoutning to de-encrypt
+encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 #### TMUX
-* tmux new -s sessionnamme    # do this to start a new tmux session
+* tmux new -s sessionname    # do this to start a new tmux session
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
 **find the detach command and put it here**
 * tmux attach -t sessionname    # attach to a session
