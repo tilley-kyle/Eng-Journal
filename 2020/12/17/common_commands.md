@@ -23,6 +23,7 @@ cd ~/secure
 fusermount -u ~/secure/$SUBDOMAIN/
 * cd ~/secure                                                       # remoutning to de-encrypt
 encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
+* gpg-decrypt.sh subdomain file.gpg   # helps automate decrypting files
 #### TMUX
 * tmux new -s sessionname    # do this to start a new tmux session
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
