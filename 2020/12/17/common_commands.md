@@ -9,6 +9,7 @@
 * * leading 0's on subs postal code will cause failures
 ### common commands
 #### impors/exports
+* **q + enter**      # graceful exit
 * gcloud auth login --update-adc     # you only need to run this once per day
 * gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a    # to log into the box
 * gcloud compute scp --project=devops-f467c7d5 --zone=us-east4-a ~/local_file.txt import-export:~/    # to import a doc
@@ -23,4 +24,7 @@
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
 **find the detach command and put it here**
 * tmux attach -t sessionname    # attach to a session
+#### CSV stuff
+* sed 's/[\x0\r]//g' source.csv > target.csv    # removes null values from CSV - and outputs to new file
+* sed 's/"//g'    # removes all double quotes on each line.
 
