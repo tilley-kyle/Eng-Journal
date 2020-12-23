@@ -1,5 +1,5 @@
 # [company/mechant] Import
-# Dates
+## Dates
 #### Useful Links
 * [Recurly Wiki for EncFS (mounting and unmounting)](https://wiki.recurly.net/display/DEV/How+to+use+EncFS)
 * [v2-api-data-imports github readme](https://github.com/recurly/v2-api-data-imports)
@@ -9,12 +9,10 @@
 * [TMUX cheat sheet](https://tmuxcheatsheet.com/)
 * [vim cheat sheet](https://vim.rtorr.com/)
 ####
-- [ ] gcloud auth login --update-adc                                                    # _gcloud auth done once per day_
-- [ ] gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a      # _log into the import box_
-```
+- [ ] gcloud auth login --update-adc                                                    # gcloud auth done once per day
+- [ ] gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a      # log into the import box
 - [ ] tmux new -s sessionname                                                           # start a tmux session with name sessionname
-
-```- [ ] ./new_import.sh                                                                   # Starts a new import subdomain for the new client. will need to supply: subdomain, api key, p, and 3 (for production)
+- [ ] ./new_import.sh                                                                   # Starts a new import subdomain for the new client. will need to supply: subdomain, api key, p, and 3 (for production)
 - [ ] cd [production subdomain]                                                         # move into the new subdomain
 - [ ] cd data                                                                           # FIRST CHECK OF DATA, headers, empty fields, bad data types (1st time)
 * Check UI for subdomain to confirm things like: plan codes, coupons, shipping, required address
