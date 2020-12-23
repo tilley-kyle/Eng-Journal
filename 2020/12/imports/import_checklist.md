@@ -9,7 +9,7 @@
 * [TMUX cheat sheet](https://tmuxcheatsheet.com/)
 * [vim cheat sheet](https://vim.rtorr.com/)
 ####
-- [ ] gcloud auth login --update-adc                                                    # gcloud auth done once per day
+- [ ] gcloud auth login --update-adc                                                    # _gcloud auth done once per day_
 - [ ] gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a      # log into the import box
 - [ ] tmux new -s sessionname                                                           # start a tmux session with name sessionname
 - [ ] ./new_import.sh                                                                   # Starts a new import subdomain for the new client. will need to supply: subdomain, api key, p, and 3 (for production)
