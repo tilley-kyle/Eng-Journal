@@ -32,4 +32,5 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 #### CSV stuff
 * sed 's/[\x0\r]//g' source.csv > target.csv    # removes null values from CSV - and outputs to new file
 * sed 's/"//g'    # removes all double quotes on each line.
-
+#### cool things
+* `grep -rsi "thing i'm looking up"`    # look up a specific thing in my file system
