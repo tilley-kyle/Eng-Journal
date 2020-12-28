@@ -24,6 +24,8 @@ fusermount -u ~/secure/$SUBDOMAIN/
 * cd ~/secure                                                       # remoutning to de-encrypt
 encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 * gpg-decrypt.sh subdomain file.gpg   # helps automate decrypting files
+* script to batch things
+* * ruby setup_import.rb site-subdomain number data_file_location startingindex
 #### TMUX
 * tmux new -s sessionname    # do this to start a new tmux session
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
@@ -34,3 +36,7 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 * sed 's/"//g'    # removes all double quotes on each line.
 #### cool things
 * `grep -rsi "thing i'm looking up"`    # look up a specific thing in my file system
+* rm -rf file_names # be careful if 
+#### Vim Stuff
+* :%s/thingtoreplace/thingchanging/gc
+* imap <c-l> =><Space>    makes rockets
