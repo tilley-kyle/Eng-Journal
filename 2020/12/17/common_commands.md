@@ -24,8 +24,10 @@ fusermount -u ~/secure/$SUBDOMAIN/
 * cd ~/secure                                                       # remoutning to de-encrypt
 encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 * gpg-decrypt.sh subdomain file.gpg   # helps automate decrypting files
+* gpg --encrypt --recipient "solutions@recurly.com" --output output.gpg input.txt  # to encrypt a file
 * script to batch thingsi
 * * ruby setup_import.rb site-subdomain number data_file_location startingindex
+* `shred -u file.csv`    #this will scramble and delete files so we safely remove PCI info
 #### TMUX
 * tmux new -s sessionname    # do this to start a new tmux session
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
@@ -40,3 +42,4 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 #### Vim Stuff
 * :%s/thingtoreplace/thingchanging/gc
 * imap <c-l> =><Space>    makes rockets
+:e file-you-want-to-move-to
