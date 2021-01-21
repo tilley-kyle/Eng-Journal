@@ -9,6 +9,7 @@
 * * leading 0's on subs postal code will cause failures
 ### common commands
 #### impors/exports
+* gsutil cp gs://recurly-production1-us-secure-upload-appication/FILENAME #command to upload file from recurly secure place
 * **q + enter**      # graceful exit
 * gcloud auth login --update-adc     # you only need to run this once per day
 * gcloud compute ssh import-export --project=devops-f467c7d5 --zone=us-east4-a    # to log into the box
