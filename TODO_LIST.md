@@ -11,3 +11,12 @@
 - [ ] DATA-6145: Run account validator using a make command
 - [ ] DATA-6186: Fix api_key regex in part2_import_runner
 - [x] Bennet PR
+- [ ] Meet Gil for script to update the transactions
+- [ ] RCMD practice
+- [ ] make a 'queryall' function for the strip payment intents gateway
+- [ ] write sql to search moneybot logs for transactions uuids with multiple references
+- [ ] Update 30/60/90 goals
+- [ ] SQL practice
+- [ ] RoR practice
+- [ ] Typing practice, eliminate typos
+- [ ] mlslistings
