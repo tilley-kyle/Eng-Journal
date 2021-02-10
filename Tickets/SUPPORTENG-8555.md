@@ -20,10 +20,28 @@ extra context might be on notes from the 5th
 * make default gateway
 
 * **Look in prep_account_import_payload.rb**
-* headers = { 'Recurly-Skip-Authorization' => true } # this could be where to add the exp api version 
+* headers = { 'Recurly-Skip-Authorization' => true } # this could be where to add the exp api version
 
 ### MLS testing on kyle-prod
 * paypal payflow prow
 * * gateway code: obyq9n4i0f73
 * Braintree
 * * gateway code: obys0cyi9tcp
+
+
+### Idea to test.
+* Might need to try my own http requests. net.http
+* * Will need to do it that way
+
+
+
+* make a sub for some amount
+* https://graylog.production.recurly.net/search?q=%22%2Fv2%2Finvoices%2F91331%2Frefund%22&rangetype=absolute&streams=5e3b333cf10f6b0027859277&from=2021-01-29T00%3A00%3A00.000Z&to=2021-02-01T00%3A00%3A00.000Z
+<invoice>
+  <amount_in_cents>****</amount_in_cents>
+  <refund_method>transaction_first</refund_method>
+  <external_refund>true</external_refund>
+  <payment_method>credit_card</payment_method>
+  <description>20-21 AHLTV Auto-renew Correction</description>
+</invoice>
+* API void refund

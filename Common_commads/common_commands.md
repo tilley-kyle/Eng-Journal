@@ -44,6 +44,9 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 * :%s/thingtoreplace/thingchanging/gc
 * imap <c-l> =><Space>    makes rockets
 :e file-you-want-to-move-to
-
+* .  # repeat the last command you did
 #### RCMD stuff
-* cmd exec POD_NAME -t -- rails c  # opens the rails console 
+* cmd exec POD_NAME -t -- rails c  # opens the rails console
+
+#### Header for v2
+* X-Api-Version: 2.29
