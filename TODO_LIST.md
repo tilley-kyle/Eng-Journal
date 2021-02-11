@@ -21,4 +21,4 @@
 - [ ] Typing practice, eliminate typos
 - [ ] mlslistings
 - [ ] PR for typo in make decrypt
-- [ ] medtrainer account update
+- [x] medtrainer account update script
