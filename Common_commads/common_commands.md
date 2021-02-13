@@ -29,6 +29,7 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 * script to batch thingsi
 * * ruby setup_import.rb site-subdomain number data_file_location startingindex
 * `shred -u file.csv`    #this will scramble and delete files so we safely remove PCI info
+* mount | grep 'name'
 #### TMUX
 * tmux new -s sessionname    # do this to start a new tmux session
 * tmux kill-session -t sessionname # kill the session (could be different command, will find out later)
@@ -46,7 +47,7 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 :e file-you-want-to-move-to
 * .  # repeat the last command you did
 #### RCMD stuff
-* cmd exec POD_NAME -t -- rails c  # opens the rails console
+* cmd exec POD_NAME -t -- rails c  # opens the rails c
 
 #### Header for v2
 * X-Api-Version: 2.29

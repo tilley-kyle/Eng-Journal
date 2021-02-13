@@ -22,3 +22,4 @@
 - [ ] mlslistings
 - [ ] PR for typo in make decrypt
 - [x] medtrainer account update script
+- [ ] 30 60 90 goals
