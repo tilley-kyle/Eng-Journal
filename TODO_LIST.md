@@ -8,12 +8,12 @@
 - [x] Check Jira Ticket work load
 - [ ] DATA-6196: Refactor make tumx_run to store data for graceful exit
 - [x] DATA-6172: Decrypt files using make command
-- [ ] DATA-6145: Run account validator using a make command
-- [ ] DATA-6186: Fix api_key regex in part2_import_runner
+- [x] DATA-6145: Run account validator using a make command
+- [x] DATA-6186: Fix api_key regex in part2_import_runner
 - [x] Bennet PR
 - [x] Meet Gil for script to update the transactions
 - [ ] RCMD practice
-- [ ] make a 'queryall' function for the strip payment intents gateway
+- [ ] make a 'queryall' function for the stripe payment intents gateway
 - [ ] write sql to search moneybot logs for transactions uuids with multiple references
 - [ ] Update 30/60/90 goals
 - [ ] SQL practice
