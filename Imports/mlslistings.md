@@ -50,3 +50,10 @@ card_reference_id,billing_token_id,account_code,email,first_name,last_name,addre
 ## 02/23
 * made a support script (okay, stole it) to update the account_codes.
 * it properly iterates through the input csv, looks for the account codes in the db, and updates them in the three tables mentioned above
+## 02/24
+* Update 50 account codes
+* update the 50 account fields
+* ACCOUNT CODE UPDATE WORKS FINE.
+* Jitterbit or SF integration is messing up the account data (first_name, last_name)
+
+* UPDATED 15167 account codes based on the two reports (small batch and full batch)
