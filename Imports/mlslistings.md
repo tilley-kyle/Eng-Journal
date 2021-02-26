@@ -57,3 +57,81 @@ card_reference_id,billing_token_id,account_code,email,first_name,last_name,addre
 * Jitterbit or SF integration is messing up the account data (first_name, last_name)
 
 * UPDATED 15167 account codes based on the two reports (small batch and full batch)
+
+### 02/25/2021
+child account queries
+Create PR to clear manual invoice counts:
+# Query to validate manual invoice counts:
+# SELECT id, manual_invoice_count
+# FROM recurly_production.stats_recurly_billing
+# WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+# AND manual_invoice_count > 0;
+SET @manual_invoice_count_id :=
+(SELECT id
+  FROM recurly_production.stats_recurly_billing
+  WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+  AND stat_date = '2021-02-25');
+
+UPDATE recurly_production.stats_recurly_billing SET manual_invoice_count = (manual_invoice_count - 1618), updated_at = UTC_TIMESTAMP()
+WHERE id = @manual_invoice_count_id;
+
+SET @manual_invoice_count_id = NULL;
+
+Query to validate manual invoice counts:
+SELECT id, manual_invoice_count
+FROM recurly_production.stats_recurly_billing
+WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+AND manual_invoice_count > 0;
+
+Subs import results
+Success: 1619
+Failed: 1
+One failure due to the account not imported yet
+
+### Parent subs cleanup
+# Query to validate manual invoice counts:
+# SELECT id, manual_invoice_count
+# FROM recurly_production.stats_recurly_billing
+# WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+# AND manual_invoice_count > 0;
+SET @manual_invoice_count_id :=
+(SELECT id
+  FROM recurly_production.stats_recurly_billing
+  WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+  AND stat_date = '2021-02-25');
+
+UPDATE recurly_production.stats_recurly_billing SET manual_invoice_count = (manual_invoice_count - 38), updated_at = UTC_TIMESTAMP()
+WHERE id = @manual_invoice_count_id;
+
+SET @manual_invoice_count_id = NULL;
+
+Query to validate manual invoice counts:
+SELECT id, manual_invoice_count
+FROM recurly_production.stats_recurly_billing
+WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+AND manual_invoice_count > 0;
+
+
+#### Child subs cleanup
+5. Create PR to clear manual invoice counts:
+# Query to validate manual invoice counts:
+# SELECT id, manual_invoice_count
+# FROM recurly_production.stats_recurly_billing
+# WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+# AND manual_invoice_count > 0;
+SET @manual_invoice_count_id :=
+(SELECT id
+  FROM recurly_production.stats_recurly_billing
+  WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+  AND stat_date = '2021-02-25');
+
+UPDATE recurly_production.stats_recurly_billing SET manual_invoice_count = (manual_invoice_count - 1), updated_at = UTC_TIMESTAMP()
+WHERE id = @manual_invoice_count_id;
+
+SET @manual_invoice_count_id = NULL;
+
+Query to validate manual invoice counts:
+SELECT id, manual_invoice_count
+FROM recurly_production.stats_recurly_billing
+WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+AND manual_invoice_count > 0;

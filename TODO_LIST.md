@@ -23,3 +23,4 @@
 - [ ] PR for typo in make decrypt
 - [x] medtrainer account update script
 - [ ] 30 60 90 goals
+- [ ] edit import script to print out the rb file of the query that needs to be run update the manual invoice counts
