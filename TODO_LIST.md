@@ -12,15 +12,14 @@
 - [x] DATA-6186: Fix api_key regex in part2_import_runner
 - [x] Bennet PR
 - [x] Meet Gil for script to update the transactions
-- [ ] RCMD practice
+- [x] RCMD practice
 - [ ] make a 'queryall' function for the stripe payment intents gateway
-- [ ] write sql to search moneybot logs for transactions uuids with multiple references
-- [ ] Update 30/60/90 goals
 - [ ] SQL practice
 - [ ] RoR practice
 - [ ] Typing practice, eliminate typos
-- [ ] mlslistings
-- [ ] PR for typo in make decrypt
+- [x] mlslistings
+- [x] PR for typo in make decrypt
 - [x] medtrainer account update script
 - [ ] 30 60 90 goals
-- [ ] edit import script to print out the rb file of the query that needs to be run update the manual invoice counts
+- [x] edit import script to print out the rb file of the query that needs to be run update the manual invoice counts
+- [ ] Script to make subs prep account failures easy to find a list of the account codes

@@ -135,3 +135,51 @@ SELECT id, manual_invoice_count
 FROM recurly_production.stats_recurly_billing
 WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
 AND manual_invoice_count > 0;
+
+9 digit problem
+5. Create PR to clear manual invoice counts:
+# Query to validate manual invoice counts:
+# SELECT id, manual_invoice_count
+# FROM recurly_production.stats_recurly_billing
+# WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+# AND manual_invoice_count > 0;
+SET @manual_invoice_count_id :=
+(SELECT id
+  FROM recurly_production.stats_recurly_billing
+  WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+  AND stat_date = '2021-02-26');
+
+UPDATE recurly_production.stats_recurly_billing SET manual_invoice_count = (manual_invoice_count - 1), updated_at = UTC_TIMESTAMP()
+WHERE id = @manual_invoice_count_id;
+
+SET @manual_invoice_count_id = NULL;
+
+Query to validate manual invoice counts:
+SELECT id, manual_invoice_count
+FROM recurly_production.stats_recurly_billing
+WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'mlslistingsinc')
+AND manual_invoice_count > 0;
+
+
+## Net terms and
+* Count back 30 days and 'due_date'
+* Try next_bill_date
+
+## Looking at current term start dates
+* Starting between 2021-03-01 and 2021-03-02: 1490 records
+* 02 and 03:
+
+## 3/2/2021
+### Talk w/ Lex and Katie
+* What is provisioning?
+* solutions design workshop? What is that, large merchants tend to have them
+* Why is this more confusing that I think it should be?
+* billing alignment vs billing offsets
+* Can update the invoices that have already renewed (like the march 1st ones) (also those invoices are sent out, what about then)
+* Will then have to update all the underlying subs
+* account code, subs uuid, new bill date and due dates,
+* * Also need to know what they want to change
+* Testing on updating things
+* Does that use case of the offset make sense to them
+* update on the invoices  and update on the subs
+* Validate that offset works
