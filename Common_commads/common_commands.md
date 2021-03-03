@@ -47,7 +47,7 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 :e file-you-want-to-move-to
 * .  # repeat the last command you did
 #### RCMD stuff
-* cmd exec POD_NAME -t -- rails c  # opens the rails c
+* rcmd exec POD_NAME -t -- rails c  # opens the rails c
 
 #### Header for v2
 * X-Api-Version: 2.29
