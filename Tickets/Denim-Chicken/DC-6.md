@@ -1,6 +1,8 @@
 # DC-6 Stripe: cannot query a refund, it looks for the re_reference on the setup_intent
 ### Link
 [Link to DC-6 Jira](https://jira.recurly.net/browse/DC-6)
+[Link to retestly](https://github.com/recurly/retestly/blob/d9ffe6b00494c17dbdcf5475fb45c6128ca418b7/spec/api/v2/payments/gateway/gateway_query_api_spec.rb#L8)
+
 
 ## Description
 Given a refund transaction that has been run on a site that is using the payment_intents FF, we should be able to query that refund if it returned a queryable transactin error.
