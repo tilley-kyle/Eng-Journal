@@ -25,3 +25,5 @@
 - [ ] Script to make subs prep account failures easy to find a list of the account codes
 - [ ] MLS Manual invoice count
 - [ ] DC-25: Add why we shouldn't be querying through ra/consumers for the transaction investigations (or in general after the fact)
+- [ ] Test `wc -l ` in counting lines on a file set with `headers:true` or not
+- [ ] Learn grep
