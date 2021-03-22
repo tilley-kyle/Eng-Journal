@@ -27,3 +27,4 @@
 - [ ] DC-25: Add why we shouldn't be querying through ra/consumers for the transaction investigations (or in general after the fact)
 - [ ] Test `wc -l ` in counting lines on a file set with `headers:true` or not
 - [ ] Learn grep
+- [ ] Clean up old repos (not used like in support data updates)
