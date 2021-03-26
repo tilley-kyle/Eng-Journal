@@ -16,3 +16,12 @@
 * All subscriptions failed because they didn't include values for 'plan_unit_amount'
 * Update the jira and tagged Monica about this info
 * Should be a quick import if they are okay with all of the plan unit amounts defaulting to what ever is in their site
+### 03/23/2021
+* Monica said that all unit amounts for plan codes will be default for the site
+* need to get rid of '' in the empty fields
+* Looks like the cards file is bad.
+* * Most of the numbers end in 0
+* * Most don't pass the Lunh Algorithm
+### 03/25/2021
+* Got back updated account mapping file
+* * still has quotes in the empty fields but we are going forward with it anyway

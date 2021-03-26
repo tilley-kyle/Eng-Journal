@@ -51,3 +51,7 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 
 #### Header for v2
 * X-Api-Version: 2.29
+
+#### SFTP and CHMOD
+* `sftp sftp148@sftp.recurly.com`
+* `chmod 644 [file]`
