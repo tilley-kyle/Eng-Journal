@@ -55,3 +55,4 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 #### SFTP and CHMOD
 * `sftp sftp148@sftp.recurly.com`
 * `chmod 644 [file]`
+* https://wiki.recurly.net/display/SE/Transferring+Files+Uploaded+via+upload.recurly.com
