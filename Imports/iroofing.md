@@ -21,3 +21,11 @@
 * some non-traditional characters
 * some of the accounts have multiple subs (to different plans)
 * country 'GBP' is listed. Do they mean 'GB'
+
+### 04/01/2021
+* 1416 total records
+* 1268 attempted prep
+* 1212 succeeded prep
+* * subtracted from eachother 91
+* 57 failed the prep stage (no join data) 
+

@@ -59,3 +59,9 @@ encfs -o allow_other ~/secure/$SUBDOMAIN.enc/ ~/secure/$SUBDOMAIN/
 
 ####
 `chrome://inspect/#devices`
+NODE_ENV=test ./node_modules/.bin/mocha --inspect-brk test/integration/stripe_payment_intents/query.test.js
+
+
+
+
+rcmd ll pods | grep 'script-runner'
