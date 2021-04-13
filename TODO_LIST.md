@@ -23,10 +23,11 @@
 - [x] 30 60 90 goals
 - [x] edit import script to print out the rb file of the query that needs to be run update the manual invoice counts
 - [ ] Script to make subs prep account failures easy to find a list of the account codes
-- [ ] MLS Manual invoice count (by mid april)
+- [x] MLS Manual invoice count (by mid april)
 - [x] DC-25: Add why we shouldn't be querying through ra/consumers for the transaction investigations (or in general after the fact)
 - [x] Test `wc -l ` in counting lines on a file set with `headers:true` or not
 - [ ] Learn grep
 - [ ] Clean up old repos (not used like in support data updates)
-- [ ] Sling transactions 15-22nd
+- [x] Sling transactions 15-22nd
 - [ ] Lead up transactions investigations for this month (march)
+- [ ] PIU

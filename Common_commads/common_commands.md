@@ -65,3 +65,29 @@ NODE_ENV=test ./node_modules/.bin/mocha --inspect-brk test/integration/stripe_pa
 
 
 rcmd ll pods | grep 'script-runner'
+
+
+
+    -- Query to validate manual invoice counts:
+    SELECT id, manual_invoice_count
+    FROM recurly_production.stats_recurly_billing
+    WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'realtytrac')
+    AND manual_invoice_count > 0;
+
+
+      SET @manual_invoice_count_id :=
+      (SELECT id
+        FROM recurly_production.stats_recurly_billing
+        WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'realtytrac')
+        AND stat_date = '2021-03-26');
+
+      UPDATE recurly_production.stats_recurly_billing SET manual_invoice_count = (manual_invoice_count - 425), updated_at = UTC_TIMESTAMP()
+      WHERE id = @manual_invoice_count_id;
+
+      SET @manual_invoice_count_id = NULL;
+
+      Query to validate manual invoice counts:
+      SELECT id, manual_invoice_count
+      FROM recurly_production.stats_recurly_billing
+      WHERE site_id = (SELECT id FROM sites WHERE subdomain = 'realtytrac')
+      AND manual_invoice_count > 0;
