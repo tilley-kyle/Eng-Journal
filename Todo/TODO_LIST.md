@@ -29,7 +29,7 @@
 - [ ] Learn grep
 - [ ] Clean up old repos (not used like in support data updates)
 - [x] Sling transactions 15-22nd
-- [ ] Lead up transactions investigations for this month (march)
-- [ ] PIU
+- [x] Lead up transactions investigations for this month (march)
+- [x] PIU
 - [ ] Differences between new import tool and old import tool
-- [ ] Reusable script for manual invoice count reset
+- [ ] ~~Reusable script for manual invoice count reset~~
