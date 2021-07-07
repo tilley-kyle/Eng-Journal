@@ -15,6 +15,7 @@ https://docs.google.com/spreadsheets/d/1L5OFHmyvNKznHpv2KHimxlhey7sn61MaLw762O7z
 ### Execution
 - [ ] <25% of first commits have dumb typo (mispelled vars)
 - [ ] Get a code change in a feature in RA (not just support scripts)
+* EE-534. Fixing the regex in zip codes
 - [ ] Daily EOD review in Eng Journal
 - [ ] Organize email inbox
 * jira updates, github updates, etc
@@ -23,6 +24,7 @@ https://docs.google.com/spreadsheets/d/1L5OFHmyvNKznHpv2KHimxlhey7sn61MaLw762O7z
 - [ ] Script to gen test data in QA
 - [ ] Keep old PRs clean
 - [ ] Keep local branches clean
+- [ ] Create backup of things like bash profile on git
 ### Impact
 - [ ] Pair with feature dev on feature work
 - [ ] Find an EE task to automate away
@@ -32,6 +34,8 @@ https://docs.google.com/spreadsheets/d/1L5OFHmyvNKznHpv2KHimxlhey7sn61MaLw762O7z
 - [ ] Weekly pmnts.com article
 - [ ] Be an expert on the team for 1 feature
 * Invoices(becky), coupons, gateways(experience with assigning), subscriptions, paymentes, taxes, analytics, charges, items, etc
+- [ ] Make a script to create rcmd-release-manifest jobs
+* Eliminate user error so much
 ### Communication and Leadership
 - [ ] Take longer to ask questions, make sure I ask everything I can
 - [ ] Async stand up every morning
